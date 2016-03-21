@@ -22,7 +22,7 @@ mesh_generators.cpp contains some sample functions for generating meshes. You ca
 5. Call <code>GenerateVertexNormals</code> (generates vertex normals for the mesh)
 6. Copy over the number of vertices, number of triangles, and the lists to the mesh
 
-After, you can use the resulting <code>TriangleMesh</code> type directly, or you can output to a file using WriteMesh.
+After, you can use the resulting <code>TriangleMesh</code> type directly, or you can output to a file by calling <code>WriteMesh</code>.
 
 
 

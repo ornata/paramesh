@@ -16,17 +16,17 @@ Thanks to Nicolas Guillemot (@nlguillemot) for pointing me towards this method f
 
 
 #### Usage
-mesh_generators.cpp contains some sample functions for generating meshes. You can easily create your own function (or a general function) by using those functions as a model. To make a function...
+mesh_generators.cpp contains some sample functions for generating meshes. You can easily create your own mesh-generating function (or a general function) by using those functions as a model.
 
+###### Making a Mesh-Generating Function
 1. Create a list of vertices and triangles for the mesh
-2. Create a function <code>vec3 f(float u, v)</code> where <code>u</code>, <code>v</code> define angles in radians. <code>u</code>=theta is the angle between horizontal cuts in the surface, and <code>v</code>=phi is the angle between vertical cuts in the surface
-3. Call <code>GeneratePoints</code> (generates points and texture coordinates)
-4. Call <code>GenerateFaces</code> (generates triangles for the mesh)
-5. Call <code>GenerateVertexNormals</code> (generates vertex normals for the mesh)
+2. Create a lambda <code>vec3 f(float u, v)</code> where <code>u</code>, <code>v</code> define angles in radians. <code>u</code>=theta is the angle between horizontal cuts in the surface, and <code>v</code>=phi is the angle between vertical cuts in the surface
+3. Call <code>GeneratePoints</code> with your lambda
+4. Call <code>GenerateFaces</code> to generate the triangles for the mesh
+5. Call <code>GenerateVertexNormals</code>
 6. Copy over the number of vertices, number of triangles, and the lists to the mesh
 
 After, you can use the resulting <code>TriangleMesh</code> type directly, or you can output to a file by calling <code>WriteMesh</code>.
-
 
 
 

@@ -1,4 +1,8 @@
 # paramesh
+
+![](https://pbs.twimg.com/media/Cd4GQUDUsAA20tv.jpg:large)
+_The bagel immersion of a Klein bottle_
+
 Generate a triangle mesh from a parametric equation. This is done by taking the surface and "cutting it up" into "rings" and "slices". Two angles, theta and phi step along the rings and the slices to form quads on the mesh, which are then broken up into two triangles.
 
 For example, for a sphere we'd break it up like this:

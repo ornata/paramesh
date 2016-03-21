@@ -19,7 +19,7 @@ Thanks to Nicolas Guillemot (@nlguillemot) for pointing me towards this method f
 mesh_generators.cpp contains some sample functions for generating meshes. You can easily create your own function (or a general function) by using those functions as a model. To make a function...
 
 1. Create a list of vertices and triangles for the mesh
-2. Create a function <code>vec3 f(float u, v)</code> with <code>u</code>, <code>v</code> angles in radians which defines your surface. <code>u</code> is the angle between horizontal cuts in the surface (theta), and <code>v</code> is the angle between vertical cuts in the surface.
+2. Create a function <code>vec3 f(float u, v)</code> where <code>u</code>, <code>v</code> define angles in radians. <code>u</code>=theta is the angle between horizontal cuts in the surface, and <code>v</code>=phi is the angle between vertical cuts in the surface
 3. Call <code>GeneratePoints</code> (generates points and texture coordinates)
 4. Call <code>GenerateFaces</code> (generates triangles for the mesh)
 5. Call <code>GenerateVertexNormals</code> (generates vertex normals for the mesh)

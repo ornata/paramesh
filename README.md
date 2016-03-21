@@ -8,7 +8,9 @@ For example, for a sphere we'd break it up like this:
 More rings and slices will mean more triangles in the mesh. 32 rings and 32 slices seems to work pretty well for building a generally smooth mesh.
 
 #### Requirements
-Some sort of vector math library. I used glm. You can easily sub your own in by editing mesh.hpp. (I'll probably make this more standalone at some point when I have a bit more time.)
+* Some sort of vector math library. I used glm. You can easily sub your own in by editing mesh.hpp. (I'll probably make this more standalone at some point when I have a bit more time.)
+* A C++ compiler that supports at least C++11.
+
 
 #### Usage
 mesh_generators.cpp contains some sample functions for generating meshes. You can easily create your own function (or a general function) by using those functions as a model. To make a function...

@@ -218,7 +218,7 @@ void GenerateVertexNormals(vector<MeshVertex> &vlist, const vector<MeshTriangle>
     #pragma omp parallel for
     for (int v = 0; v < vlist.size(); v++) {
 
-    // find the first triangle the vertex appears in
+        // find the first triangle the vertex appears in
         for (int i = 0; i < tlist.size(); i++) {
             if ((tlist[i].i0 != v) &&
                 (tlist[i].i1 != v) &&
